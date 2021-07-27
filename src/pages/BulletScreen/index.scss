@@ -1,0 +1,96 @@
+.bullet-screen-wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+
+    .bullet-screen-search-wrapper {
+        display: flex;
+        justify-content: center;
+        .bullet-screen-search {
+            width: 70%;
+        }
+        .certain-category-search-dropdown {
+            .ant-select-dropdown-menu-item-group-title {
+                color: #666;
+                font-weight: bold;
+            }
+            .ant-select-dropdown-menu-item-group {
+                border-bottom: 1px solid #f6f6f6;
+            }
+            .ant-select-dropdown-menu-item {
+                padding-left: 16px;
+            }
+            .ant-select-dropdown-menu-item.show-all {
+                text-align: center;
+                cursor: default;
+            }
+            .ant-select-dropdown-menu {
+                max-height: 300px;
+            }
+        }
+    }
+    .progress-wrapper {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: flex;
+        .progress {
+            flex-grow: 1;
+        }
+    }
+    .bullet-screen-list {
+        flex: 1;
+        .bullet-screen-list-animation-wrapper {
+            height: 600px;
+            margin: 0 50px;
+            border: 2px solid #666;
+            background-color: #000000;
+            // background-color: #fff;
+            position: relative;
+            .bullet-screen-list-animation-content {
+                position: relative;
+                height: 100%;
+                overflow: hidden;
+                .bullet-screen-list-animation-item {
+                    display: none;
+                    position: absolute;
+                    white-space: nowrap;
+                    transition: right 10s linear;
+                    font-family: 'Muli', sans-serif;
+                    font-size: 22px;
+                    color: #fff;
+                }
+            }
+
+            .bullet-screen-toggle {
+                width: 54px;
+                height: 54px;
+                position: absolute;
+                bottom: 8%;
+                right: 5%;
+                background-image: url('../../images/toggle.png');
+                cursor: pointer;
+            }
+        }
+    }
+    .bullet-scrren-echarts-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        .bullet-scrren-echarts-line {
+            flex: 1;
+        }
+        .bullet-scrren-echarts-empty {
+            border: 1px solid #000;
+            width: 80%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

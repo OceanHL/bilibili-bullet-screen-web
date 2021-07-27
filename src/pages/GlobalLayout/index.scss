@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+.ant-layout-header {
+    border-radius: 8px;
+}
+
+.layout {
+    padding: 0 10%;
+    height: 100vh;
+}
+
+@media (max-height: 900px) {
+    .layout {
+        padding: 0 10%;
+        height: 900px;
+    }
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    .logo {
+        img {
+            vertical-align: top;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+    .selt-content {
+        flex-grow: 0.8;
+    }
+}
